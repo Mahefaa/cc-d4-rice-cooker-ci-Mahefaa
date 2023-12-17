@@ -1,0 +1,35 @@
+{
+  "name": "cc-d4-rice-cooker-ci-mahefaa",
+  "version": "1.0.0",
+  "description": "vary-cooker-ci, a rice cooker manager with CI",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "run": "tsc && node ./build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts",
+    "clean": "rm -r build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hei-school/cc-d2-my-rice-cooker-Mahefaa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hei-school/cc-d4-rice-cooker-ci-Mahefaa/issues"
+  },
+  "homepage": "https://github.com/hei-school/cc-d4-rice-cooker-ci-Mahefaa#readme",
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.56.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-standard-with-typescript": "^43.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.4.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^5.3.3"
+  }
+}
