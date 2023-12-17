@@ -23,3 +23,38 @@ These are the actions you can make with this program:
 
 ### CI - Features
 unit tests documentation per branches will be put here later on.
+
+## Typescript: 
+This is the Typescript implementation of Rice-cooker-CI, it reimplements [Rice-cooker](https://github.com/hei-school/cc-d2-my-rice-cooker-Mahefaa) and adds a CI connected with [circleCI](https://circleci.com/)
+
+
+### Installation: 
+
+Clone this repository in your local machine:
+```bash
+    git clone git@github.com:hei-school/cc-d4-rice-cooker-ci-Mahefaa.git
+```
+
+Checkout into the feature/typescript branch:
+
+```bash
+    cd cc-d4-rice-cooker-ci-Mahefaa/
+    git checkout origin/feature/typescript
+```
+Install required dependencies
+```bash
+    npm install
+```
+
+### Running:
+* Rice cooker
+```bash
+    npm run run
+```
+* Rice cooker CI:
+
+* Linter:
+#### rq: As linter I used [standard-with-typescript](https://www.npmjs.com/package/eslint-config-standard-with-typescript)
+```bash
+    npm run lint
+```
