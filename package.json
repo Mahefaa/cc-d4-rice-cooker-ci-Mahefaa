@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "run": "tsc && node ./build/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "eslint . --ext .ts",
     "clean": "rm -r build"
   },
@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/hei-school/cc-d4-rice-cooker-ci-Mahefaa#readme",
   "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/jest": "^29.5.11",
     "@types/node": "^20.10.4",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.13.2",
@@ -30,6 +32,8 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^16.4.0",
     "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
     "typescript": "^5.3.3"
   }
 }

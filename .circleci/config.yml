@@ -1,0 +1,26 @@
+version: 2.1
+
+jobs:
+  build_typescript:
+    docker:
+      - image: node:latest
+
+    steps:
+      - checkout
+      - run:
+          name: Dependency installation
+          command: npm install
+
+      - run:
+          name: Unit test
+          command: npm test
+
+workflows:
+  version: 2
+  typescript-test:
+    jobs:
+      - build_typescript:
+          filters:
+            branches:
+              only:
+                - feature/typescript
