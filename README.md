@@ -23,3 +23,37 @@ These are the actions you can make with this program:
 
 ### CI - Features
 unit tests documentation per branches will be put here later on.
+
+### CI - Features
+unit tests documentation per branches will be put here later on.
+
+## Scala:
+This is the Typescript implementation of Rice-cooker-CI, it reimplements [Rice-cooker](https://github.com/hei-school/cc-d2-my-rice-cooker-Mahefaa) and adds a CI connected with [circleCI](https://circleci.com/)
+
+
+### Installation:
+
+Clone this repository in your local machine:
+```bash
+    git clone git@github.com:hei-school/cc-d4-rice-cooker-ci-Mahefaa.git
+```
+
+Checkout into the feature/typescript branch:
+
+```bash
+    cd cc-d4-rice-cooker-ci-Mahefaa/
+    git checkout origin/feature/scala
+
+
+### Running:
+* Rice cooker
+```bash
+    sbt run
+```
+* Rice cooker CI:
+
+* Linter:
+#### rq: As linter I used scalastyle
+```bash
+    java -jar scalastyle_2.12-1.0.0-batch.jar --config ./scalastyle-config.xml .
+```
