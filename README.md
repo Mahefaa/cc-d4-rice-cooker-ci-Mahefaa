@@ -23,3 +23,33 @@ These are the actions you can make with this program:
 
 ### CI - Features
 unit tests documentation per branches will be put here later on.
+## Dart:
+This is the Dart implementation of Rice-cooker-CI, it reimplements [Rice-cooker](https://github.com/hei-school/cc-d2-my-rice-cooker-Mahefaa) and adds a CI connected with [circleCI](https://circleci.com/)
+
+
+### Installation:
+
+Clone this repository in your local machine:
+```bash
+    git clone git@github.com:hei-school/cc-d4-rice-cooker-ci-Mahefaa.git
+```
+
+Checkout into the feature/typescript branch:
+
+```bash
+    cd cc-d4-rice-cooker-ci-Mahefaa/
+    git checkout origin/feature/Dart
+```
+
+### Running:
+* Rice cooker
+```bash
+    dart main.dart
+```
+* Rice cooker CI:
+
+* Linter:
+#### rq: As linter I used dart analyze
+```bash
+    dart analyze .
+```
