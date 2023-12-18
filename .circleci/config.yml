@@ -1,0 +1,12 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/ruby:3.2.2
+    steps:
+      - checkout
+      - run:
+          name: Run tests
+          command: |
+            ruby test/rice_cooker.rb
