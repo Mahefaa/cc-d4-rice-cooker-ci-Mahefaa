@@ -105,6 +105,7 @@ class RiceCooker {
     log.info('cooking')
     this._status.work_status = WORK_STATUS.BUSY
     countFromOneUntil(this.RICE_COOKER_COOKING_TIME)
+    log.info('rice is cooked')
     this._status.work_status = WORK_STATUS.AVAILABLE
   }
 
@@ -136,6 +137,7 @@ class RiceCooker {
     this._status.work_status = WORK_STATUS.BUSY
     countFromOneUntil(8)
     this._status.work_status = WORK_STATUS.AVAILABLE
+    log.info('water is boiling')
     return this
   }
 
