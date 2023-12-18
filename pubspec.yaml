@@ -1,0 +1,7 @@
+name: dart_rice_cooker
+
+dev_dependencies:
+  test: any
+
+environment:
+  sdk: '^2.15.1'
