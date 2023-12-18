@@ -23,3 +23,9 @@ These are the actions you can make with this program:
 
 ### CI - Features
 unit tests documentation per branches will be put here later on.
+
+### Implementations:
+* [Typescript](https://github.com/hei-school/cc-d4-rice-cooker-ci-Mahefaa/tree/feature/typescript)
+* [Dart](https://github.com/hei-school/cc-d4-rice-cooker-ci-Mahefaa/tree/feature/dart)
+* [Ruby](https://github.com/hei-school/cc-d4-rice-cooker-ci-Mahefaa/tree/feature/ruby)
+* [Scala](https://github.com/hei-school/cc-d4-rice-cooker-ci-Mahefaa/tree/feature/scala)
