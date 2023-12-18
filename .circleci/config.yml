@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  build:
+  build_dart:
     docker:
       - image: google/dart:latest
 
@@ -20,7 +20,7 @@ workflows:
   version: 2
   build:
     jobs:
-      - build:
+      - build_dart:
           filters:
             branches:
               only:
