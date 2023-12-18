@@ -23,3 +23,30 @@ These are the actions you can make with this program:
 
 ### CI - Features
 unit tests documentation per branches will be put here later on.
+## Ruby:
+This is the Typescript implementation of Rice-cooker-CI, it reimplements Rice-cooker and adds a CI connected with circleCI
+
+Installation:
+Clone this repository in your local machine:
+```bash
+    git clone git@github.com:hei-school/cc-d4-rice-cooker-ci-Mahefaa.git
+```
+Checkout into the feature/typescript branch:
+```bash
+    cd cc-d4-rice-cooker-ci-Mahefaa/
+    git checkout origin/feature/ruby
+```
+Install required dependencies
+    
+Running:
+Rice cooker
+npm run run
+Rice cooker CI:
+
+Linter:
+
+rq: As linter I used [rubocop](https://docs.rubocop.org/rubocop/1.58/installation.html)
+
+```bash
+    rubocop
+```
