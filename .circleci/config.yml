@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-  build:
+  build_ruby:
     docker:
       - image: cimg/ruby:3.2.2
     steps:
@@ -10,3 +10,13 @@ jobs:
           name: Run tests
           command: |
             ruby test/rice_cooker.rb
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build_ruby:
+          filters:
+            branches:
+              only:
+                - feature/ruby
