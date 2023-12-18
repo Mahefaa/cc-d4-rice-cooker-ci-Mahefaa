@@ -1,3 +1,9 @@
+import 'core/rice_cooker.dart';
+import 'core/runner.dart';
+
 void main() {
-  print('hello world');
+  final riceCooker = RiceCooker();
+  final runner = Runner(riceCooker);
+
+  runner.run();
 }
