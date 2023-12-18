@@ -35,13 +35,13 @@ class RiceCooker {
   }
 
   add_water (): number {
-    this.ensure_capacity()
+    this._ensureCapacity()
     log.info('adding 1L of water')
     return this.water_actions.increase_amount()
   }
 
   add_rice (): number {
-    this.ensure_capacity()
+    this._ensureCapacity()
     log.info('adding 1 cup of rice')
     return this._rice_amount++
   }
@@ -61,7 +61,7 @@ class RiceCooker {
     throw new CustomError('Water level is already 0')
   }
 
-  private ensure_capacity (): void {
+  private _ensureCapacity (): void {
     const availableSpace = this.compute_available_space()
     if (availableSpace === 0) {
       throw new CustomError('Rice cooker is already full.')
@@ -101,6 +101,7 @@ class RiceCooker {
   cook (): void {
     this.ensureAvailability()
     this.ensureWaterPresence()
+    this.ensureRicePresence()
     log.info('cooking')
     this._status.work_status = WORK_STATUS.BUSY
     countFromOneUntil(this.RICE_COOKER_COOKING_TIME)
@@ -130,6 +131,7 @@ class RiceCooker {
 
   boil_water (): this {
     this.ensureAvailability()
+    this.ensureWaterPresence()
     log.info('boiling water')
     this._status.work_status = WORK_STATUS.BUSY
     countFromOneUntil(8)
