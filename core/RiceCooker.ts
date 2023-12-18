@@ -121,7 +121,7 @@ class RiceCooker {
   }
 
   private ensureAvailability (): void {
-    if (this.isPluggedIn()) {
+    if (!this.isPluggedIn()) {
       throw new CustomError('Turn the rice cooker on first')
     }
     if (this.isBusy()) {
