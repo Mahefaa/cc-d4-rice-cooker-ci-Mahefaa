@@ -1,0 +1,27 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: google/dart:latest
+
+    steps:
+      - checkout
+
+      - run:
+          name: Install dependencies
+          command: dart pub get
+
+      - run:
+          name: Run tests
+          command: dart test/rice_cooker.dart
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - feature/dart
